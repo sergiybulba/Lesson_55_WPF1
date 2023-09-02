@@ -1,0 +1,158 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="Calculator" Height="500" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.076923*"></RowDefinition>
+            <RowDefinition Height="0.153846*"></RowDefinition>
+            <RowDefinition Height="0.153846*"></RowDefinition>
+            <RowDefinition Height="0.153846*"></RowDefinition>
+            <RowDefinition Height="0.153846*"></RowDefinition>
+            <RowDefinition Height="0.153846*"></RowDefinition>
+            <RowDefinition Height="0.153846*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Button
+            Margin="2" Background="White" BorderBrush="LightGray" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"
+            FontSize="15" HorizontalContentAlignment="Right">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="3 + 5 - 1 * 4"/>
+            </Viewbox>
+        </Button>
+        <Button
+            Margin="2" Background="White" BorderBrush="LightGray" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"
+            FontSize="40" HorizontalContentAlignment="Right">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="12" FontWeight="Bold"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="2" Grid.Column="0"
+                FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="CE"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="2" Grid.Column="1"
+                FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="C"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="2" Grid.Column="2"
+                FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="{}>"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="2" Grid.Column="3"
+                FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="/"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="3" Grid.Column="0"
+                 FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="7"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="3" Grid.Column="1"
+                FontSize="30">
+            <Viewbox>
+                <TextBlock Text="8"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="3" Grid.Column="2"
+                FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="9"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="3" Grid.Column="3"
+                FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="*"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="4" Grid.Column="0"
+                FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="4"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="4" Grid.Column="1"
+                FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="5"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="4" Grid.Column="2"
+                FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="6"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="4" Grid.Column="3"
+                FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="-"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="5" Grid.Column="0"
+                FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="1"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="5" Grid.Column="1"
+                FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="2"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="5" Grid.Column="2"
+                FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="3"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="5" Grid.Column="3"
+                FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="+"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="6" Grid.Column="0"
+                FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="."/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="6" Grid.Column="1"
+                FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="0"/>
+            </Viewbox>
+        </Button>
+        <Button Margin="2" Background="LightGray" BorderBrush="Gray" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2"
+                FontSize="30">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Text="="/>
+            </Viewbox>
+        </Button>
+
+
+    </Grid>
+</Window>
